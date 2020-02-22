@@ -11,6 +11,14 @@
         "scripts": ["js/backgroundPage.js"],
         "persistent": false
     },
+    "content_scripts": [{
+        "js": [
+            "js/contentScript.js"
+        ],
+        "matches": [
+            "https://*.machine56.com/*"
+        ]
+    }],
     "icons": {
         "16": "icon-16.png",
         "48": "icon-48.png",
