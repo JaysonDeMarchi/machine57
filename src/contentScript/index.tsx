@@ -1,6 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { ContentScript } from "./component";
+import "./styles.scss";
 
 const content = document.getElementsByClassName("content")[0];
 const productList = document.getElementsByClassName("products_list")[0];
