@@ -4,11 +4,11 @@
     "description": "A Chrome Extension starter kit built with React, TypeScript, SCSS, Bootstrap, EsLint, Prettier & Webpack",
     "main": "index.js",
     "scripts": {
-        "build": "webpack --config webpack.prod.js",
-        "dev": "webpack -w --config webpack.dev.js",
-        "test": "jest --config=jest.config.js",
-        "lint": "eslint --fix -c ./.eslintrc.js \"src/**/*.ts*\"",
-        "prettify": "prettier --write \"src/**/*.ts*\"",
+        "build": "webpack --config config/webpack.prod.js",
+        "dev": "webpack -w --config config/webpack.dev.js",
+        "test": "jest --config config/jest.config.js",
+        "lint": "eslint --fix -c config/.eslintrc.js \"src/**/*.ts*\"",
+        "prettify": "prettier --config config/.prettierrc.js --ignore-path config/.prettierignore --write \"src/**/*.ts*\"",
         "storybook": "start-storybook -p 6006",
         "build-storybook": "build-storybook"
     },

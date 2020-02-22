@@ -3,7 +3,7 @@ const webpack = require("webpack");
 const SRC_PATH = path.join(__dirname, "../src");
 const STORIES_PATH = path.join(__dirname, "../stories");
 const merge = require("webpack-merge");
-const common = require("../webpack.common.js");
+const common = require("../config/webpack.common.js");
 
 //dont need stories path if you have your stories inside your //components folder
 const updatedConfig = ({ config }) => {
