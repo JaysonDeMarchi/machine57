@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
-    "name": "Chrome Extension Starter",
-    "description": "A Chrome Extension starter kit",
+    "name": "Machine 57",
+    "description": "An extension to upgrade your Machine 56 experience",
     "version": "1.0.0",
     "browser_action": {
         "default_icon": "icon-16.png",
@@ -16,5 +16,11 @@
         "48": "icon-48.png",
         "128": "icon-128.png"
     },
-    "permissions": ["tabs", "activeTab", "notifications", "http://*/", "https://*/"]
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "notifications",
+        "http://*/",
+        "https://*/"
+    ]
 }
