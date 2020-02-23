@@ -1,6 +1,24 @@
 import React, { FunctionComponent } from "react";
 import "./styles.scss";
 
-export const FilterItem: FunctionComponent = () => {
-    return <p>Filter Item</p>;
+interface FilterItemProps {
+    id: string;
+    label: string;
+}
+
+export const FilterItem: FunctionComponent<FilterItemProps> = ({
+    id,
+    label,
+}) => {
+    return (
+        <li id={id + "-item"}>
+            <input
+                id={id}
+                type="checkbox"
+            />
+            <label htmlFor={id}>
+                {label}
+            </label>
+        </li>
+    );
 };
