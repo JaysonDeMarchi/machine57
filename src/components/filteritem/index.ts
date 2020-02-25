@@ -1,1 +1,4 @@
-export { FilterItem } from "./component";
+export {
+    FilterItem,
+    FilterItemProps,
+} from "./component";

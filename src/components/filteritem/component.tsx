@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from "react";
 import "./styles.scss";
 
-interface FilterItemProps {
+export interface FilterItemProps {
     id: string;
     label: string;
 }
