@@ -1,1 +1,4 @@
-export { FilterGroup } from "./component";
+export {
+    FilterGroup,
+    FilterGroupProps,
+} from "./component";

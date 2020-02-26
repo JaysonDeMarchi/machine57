@@ -2,7 +2,7 @@ import React, { FunctionComponent } from "react";
 import { FilterItem, FilterItemProps } from "../filteritem";
 import "./styles.scss";
 
-interface FilterGroupProps {
+export interface FilterGroupProps {
     id: string;
     label: string;
     items: Array<FilterItemProps>;
