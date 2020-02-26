@@ -23,11 +23,12 @@ yarn dev
 
 ## Loading the extension in Google Chrome
 
-1. Open [Google Chrome](https://www.google.com/chrome/).
-2. Go to [chrome://extensions](chrome://extensions).
-3. Enable `Developer Mode`.
-4. Click `Load unpacked`.
-5. Select this repository's `dist` directory.
+1. Run `yarn build`
+2. Open [Google Chrome](https://www.google.com/chrome/).
+3. Go to [chrome://extensions](chrome://extensions).
+4. Enable `Developer Mode`.
+5. Click `Load unpacked`.
+6. Select this repository's `dist` directory.
 
 ## Built with
 
