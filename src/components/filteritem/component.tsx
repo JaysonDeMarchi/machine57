@@ -11,12 +11,19 @@ export const FilterItem: FunctionComponent<FilterItemProps> = ({
     label,
 }) => {
     return (
-        <li id={id + "-item"}>
+        <li
+            className="filter_item"
+            id={id + "-item"}
+        >
             <input
+                className="filter_item_input"
                 id={id}
                 type="checkbox"
             />
-            <label htmlFor={id}>
+            <label
+                className="filter_item_label"
+                htmlFor={id}
+            >
                 {label}
             </label>
         </li>

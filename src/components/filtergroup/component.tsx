@@ -18,7 +18,10 @@ export const FilterGroup: FunctionComponent<FilterGroupProps> = ({
             {items.length == 0 ? (
                 <div />
             ) : (
-                <ul id={id}>
+                <ul
+                    className="filter_group"
+                    id={id}
+                >
                     {label}
                     {items.map((item: FilterItemProps) => (
                         <FilterItem
