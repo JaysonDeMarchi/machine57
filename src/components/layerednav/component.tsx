@@ -26,44 +26,6 @@ const defaultProps = {
                 },
             ],
         },
-        {
-            id: "product_category",
-            label: "Category",
-            items: [
-                {
-                    id: "jackets",
-                    label: "Jackets",
-                },
-                {
-                    id: "shirts",
-                    label: "Shirts",
-                },
-                {
-                    id: "pants",
-                    label: "Pants",
-                },
-                {
-                    id: "bags",
-                    label: "Bags",
-                },
-                {
-                    id: "figurines",
-                    label: "Figurines",
-                },
-                {
-                    id: "helmets",
-                    label: "Helmets",
-                },
-                {
-                    id: "bats",
-                    label: "Bats",
-                },
-                {
-                    id: "fonts",
-                    label: "Fonts",
-                },
-            ],
-        },
     ],
 };
 
