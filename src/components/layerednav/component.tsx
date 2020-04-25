@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from "react";
 import { FilterGroup, FilterGroupProps } from "../filtergroup";
+import $ from "jquery";
 import "./styles.scss";
 
 interface LayeredNavProps {
@@ -15,52 +16,20 @@ const defaultProps = {
                 {
                     id: "out_of_stock",
                     label: "Out of Stock",
+                    get: () => $(".product.sold"),
                 },
                 {
                     id: "in_stock",
                     label: "In Stock",
+                    get: () =>
+                        $('.product').filter((index, product) => {
+                            return $(product)?.attr('class')?.trim() === "product";
+                        }),
                 },
                 {
                     id: "coming_soon",
                     label: "Coming Soon",
-                },
-            ],
-        },
-        {
-            id: "product_category",
-            label: "Category",
-            items: [
-                {
-                    id: "jackets",
-                    label: "Jackets",
-                },
-                {
-                    id: "shirts",
-                    label: "Shirts",
-                },
-                {
-                    id: "pants",
-                    label: "Pants",
-                },
-                {
-                    id: "bags",
-                    label: "Bags",
-                },
-                {
-                    id: "figurines",
-                    label: "Figurines",
-                },
-                {
-                    id: "helmets",
-                    label: "Helmets",
-                },
-                {
-                    id: "bats",
-                    label: "Bats",
-                },
-                {
-                    id: "fonts",
-                    label: "Fonts",
+                    get: () => $(".product.soon"),
                 },
             ],
         },
