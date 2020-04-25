@@ -14,6 +14,8 @@ export const FilterItem: FunctionComponent<FilterItemProps> = ({
     get,
     label,
 }) => {
+    const filters = useContext(FilterContext);
+
     const toggleFilter = (e: any) => {
         get().toggle();
     };

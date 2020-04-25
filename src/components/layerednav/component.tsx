@@ -1,5 +1,6 @@
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent, useContext } from "react";
 import { FilterGroup, FilterGroupProps } from "../filtergroup";
+import FilterContext from "../../contexts/filters";
 import $ from "jquery";
 import "./styles.scss";
 
@@ -39,6 +40,7 @@ const defaultProps = {
 export const LayeredNav: FunctionComponent<LayeredNavProps> = ({
     filterGroups = defaultProps.filterGroups,
 }) => {
+    const filters = useContext(FilterContext);
     return (
         <>
             {filterGroups.length == 0 ? (
