@@ -14,6 +14,10 @@ export const FilterItem: FunctionComponent<FilterItemProps> = ({
     get,
     label,
 }) => {
+    const toggleFilter = (e: any) => {
+        get().toggle();
+    };
+
     return (
         <li
             className="filter_item"
@@ -22,6 +26,7 @@ export const FilterItem: FunctionComponent<FilterItemProps> = ({
             <input
                 className="filter_item_input"
                 id={id}
+                onClick={toggleFilter}
                 type="checkbox"
             />
             <label
