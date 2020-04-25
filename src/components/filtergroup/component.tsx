@@ -27,6 +27,7 @@ export const FilterGroup: FunctionComponent<FilterGroupProps> = ({
                         <FilterItem
                             id={item.id}
                             label={item.label}
+                            get={item.get}
                         />
                     ))}
                 </ul>

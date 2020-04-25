@@ -1,13 +1,17 @@
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent, useContext } from "react";
+import FilterContext from "../../contexts/filters";
+import $ from "jquery";
 import "./styles.scss";
 
 export interface FilterItemProps {
     id: string;
+    get: () => JQuery;
     label: string;
 }
 
 export const FilterItem: FunctionComponent<FilterItemProps> = ({
     id,
+    get,
     label,
 }) => {
     return (
